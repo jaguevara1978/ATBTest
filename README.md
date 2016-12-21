@@ -1,7 +1,9 @@
 # ATBTest
 The UX is not the best as I was more concerned about meeting the Funcitonal requirements.  
   
-Sorry about that, but maybe with a little bit more of time taht could be easily improved  
+Sorry about that, but maybe with a little bit more of time taht could be easily improved.
+  
+The SVG animated heart was used to emulate some graphics I saw on the ATB website which is a heart highlighted by a Yellow line.  
   
 Technical test for ATB  
      1) Create a hybrid mobile app for iOS that:  
