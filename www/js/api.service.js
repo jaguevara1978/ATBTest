@@ -66,14 +66,36 @@ angular.module('app').factory( 'ApiService', [ '$http', ApiService ] );
                 // (?=.*[a-z]): At least one lower case character
                 // (?=.*[A-Z]): At least one upper case character
                 // (?=.*[%#\*&!@]): At least one of the following: %#*&!@
-                var regexPwd = new RegExp( "^(?=.*[a-z])(?=.*[A-Z])(?=.*[%#\*&!@])(?=.{8,})" );
+                var regexPwd = new RegExp( "^(?=.*[a-z])(?=.*[A-Z])(?=.*[%#\*&!@])(?=.{8,12})" );
                 if ( !regexPwd.test( data.pwd ) ) {
-                    response.msg += '&#9679; The password is invalid';
+                    response.msg += '&#9679; The password is invalid<br>';
                     response.error = true;
-                }
+                } 
+                // Now Validate > Cannot have more than 3 letters together (i.e. "Abe4" is OK, but "Abig!" is not)
+                var regexAlpha = new RegExp( "^[A-Za-z]$" );
+                var alphaCounter = 0;
+                data.pwd.split( '' ).forEach( function( character ) {
+                    // If more than 3 characters in a row then no more validations needed
+                    if ( alphaCounter > 3 ) return;
+
+                    //If character is a alpha then validate the next one till maximum 3
+                    if ( regexAlpha.test( character ) ) {
+                        alphaCounter ++;
+                    } else {
+                        // If does not match then counter goes back to zero
+                        alphaCounter = 0;
+                    }
+
+                    // If we have more than 3 characters in a row then the password is not valid
+                    if ( alphaCounter > 3 ) {
+                        response.msg += '&#9679; The password Cannot have more than 3 letters together';
+                        response.error = true;
+                    }
+                    
+                });
 
                 // For Loop approach, decided to go for .filter to try ad improve 
-                //performance though now that is not too important.
+                //performance; though, now that is not too important.
                 /*
                 var obj;
                 for ( var i = 0; i < ids.length; i++ ) { 
@@ -93,7 +115,7 @@ angular.module('app').factory( 'ApiService', [ '$http', ApiService ] );
                 if ( !response.error ) {
                     response.data = {
                         uid: data.uid,
-                        //TODO - Just for testing
+                        //Just for testing
                         //pwd: data.pwd
                     };
                     response.msg = 'Authentication Successful';

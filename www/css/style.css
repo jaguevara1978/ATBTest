@@ -37,20 +37,13 @@ body :-ms-input-placeholder {
   font-weight: 300;
 }
 .wrapper {
-/*
-  background: #50a3a2;
-  background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
-  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
-*/
   background: #0079c2;
   background: -webkit-linear-gradient(top left, #0079c2 0%, #c5e1f1 100%);
   background: linear-gradient(to bottom right, #0079c2 0%, #c5e1f1 100%);
   position: absolute;
-/*   top: 50%; */
   left: 0;
   width: 100%;
   height: 100%;
-/*   margin-top: -200px; */
   overflow: hidden;
 }
 .wrapper.form-success .container h1 {
@@ -60,11 +53,6 @@ body :-ms-input-placeholder {
 .container {
   margin: 0 auto;
   text-align: center;
-/*
-  max-width: 600px;
-  padding: 80px 0;
-  height: 400px;
-*/
 }
 .container h1 {
   font-size: 40px;
@@ -85,7 +73,6 @@ body :-ms-input-placeholder {
   color: white;
 }
 form {
-/*   padding: 20px 0; */
   position: relative;
   z-index: 2;
 }
@@ -124,7 +111,6 @@ form button {
   background-color: rgba(255, 255, 255, 0.5 );;
   border: 0;
   padding: 10px 15px;
-/*   color: #53e3a6; */
   color: #0079c2;
   border-radius: 3px;
   width: 250px;
@@ -141,9 +127,7 @@ form button:not( [ disabled ] ):hover {
   background: rgba( 242, 195, 79, 1 );
 }
 
-.login_submit_disabled {
-/*   background: rgba( 142, 137, 138, 0.8 ); */
-}
+.login_submit_disabled { }
 
 /*
 I am just trying to emulate the clouds ind the back ground of the ATB's mobile
@@ -260,28 +244,8 @@ App. But with squared shapes. But hey, you get the idea.
   }
 }
 
-/*
-form#loginForm.form {
-opacity:1;
--webkit-transition: opacity 3s;
--moz-transition: opacity 3s;     
-transition: opacity 3s; 
-}
-
-form#loginForm.form.fade {
-opacity:0;
-}
-*/
-
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script);
-/*
-body{
-  background:#212121;
-  color:#F97DC4;
-  font-family: 'Dancing Script', cursive;
-  text-align: center;
-}
-*/
+
 svg path.linear-1 { 
     /*     stroke works fine, filter doesn't work */
     stroke: white;
@@ -300,24 +264,6 @@ svg path.linear-1 {
   width: 100%;
 }
 
-/*
-.loading .linear-1{
-  stroke-dasharray:281;
-  -webkit-animation: dash 6s infinite linear forwards;
-}
-.loading .linear-2{
-  stroke-dasharray:300;
-  -webkit-animation: dash 5s infinite linear forwards;
-}
-.loading .linear-3{
-  stroke-dasharray:340;
-  -webkit-animation: dash 4s infinite linear forwards;
-}
-.loading .linear-4{
-  stroke-dasharray:400;
-  -webkit-animation: dash 3s infinite linear forwards;
-}
-*/
 .loading .linear-1{
   stroke-dasharray:281;
   -webkit-animation: dash 10s infinite linear forwards;
@@ -337,22 +283,6 @@ svg path.linear-1 {
 
 /*Animation*/
 @-webkit-keyframes dash{ from{stroke-dashoffset:814;} to {stroke-dashoffset:-814;}}
-
-/*
-h1 {
-    text-shadow: 2px 2px 5px #E21393;
-}
-a,
-h3 {
-  color: #fff;
-}
-a {
-  text-decoration: none;
-}
-a:hover {
-  color: #E21393;
-}
-*/
 
 #loading {
     position: absolute;
