@@ -5,6 +5,7 @@ Sorry about that, but maybe with a little bit more of time taht could be easily 
   
 The SVG animated heart was used to emulate some graphics I saw on the ATB website which is a heart highlighted by a Yellow line.  
   
+*********************************************************************************  
 Technical test for ATB  
      1) Create a hybrid mobile app for iOS that:  
      -Has two screens: a Login screen and screen for info  
