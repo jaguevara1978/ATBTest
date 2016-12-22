@@ -1,18 +1,18 @@
 # ATBTest
-The UX is not the best as I was more concerned about meeting the Funcitonal requirements.  
-  
+
+### Note: 
+The UX is not the best as I was more concerned about meeting the Funcitonal requirements.    
 Sorry about that, but maybe with a little bit more of time taht could be easily improved.
   
-SIGN IN
+### SIGN IN
 ![Sign In](www/img/preview/signin_preview.png?raw=true "Title")
   
   
-INFO PAGE  
+### INFO PAGE  
 ![Sign In](www/img/preview/info_preview.png?raw=true "Title")
   
+### SVG ANIMATION
 The SVG animated heart was used to emulate some graphics I saw on the ATB website which is a heart highlighted by a Yellow line.  
-  
-SVG ANIMATION
 ![Loading SVG Animation](www/img/preview/loading_svg_preview.png?raw=true "Title")
 
 *********************************************************************************  
