@@ -16,13 +16,10 @@ It uses Google Custom Search API. Which means that maybe in production mode the 
   
 ### SVG ANIMATION
 The SVG animated heart was used to emulate some graphics I saw on the ATB website which is a heart highlighted by a Yellow line.  
-
+So I just got this as inspiration and tried to replicate it into an svg, of course it is not perfect, *but I am not a designer!* ;).
 ![ATB's Heart background](www/img/preview/atb_bkg.jpg?raw=true "Title")
-
-So I just got this piece and tried to emulate it into an svg, of course it is not perfect, *but I am not a designer!*.
-![ATB's Heart](www/img/preview/atb_heart.png?raw=true "Title")
-
-
+  
+And this is the resulting SVG Animation
 ![Loading SVG Animation](www/img/preview/loading_svg_preview.png?raw=true "Title")
 
 *********************************************************************************  
