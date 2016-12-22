@@ -6,6 +6,7 @@ Sorry about that, but maybe with a little bit more of time that could be easily 
   
 ### SIGN IN
 It has the necessary validations to meet the requirements, and it will show any message as needed.  
+Background animation was done to emulate a little bit the ATB mobile app background with clouds and some cool shapes. Just to show that we might be able to animate it and make it even funnier.
 ![Sign In](www/img/preview/signin_preview.png?raw=true "Title")
   
   
@@ -15,6 +16,13 @@ It uses Google Custom Search API. Which means that maybe in production mode the 
   
 ### SVG ANIMATION
 The SVG animated heart was used to emulate some graphics I saw on the ATB website which is a heart highlighted by a Yellow line.  
+
+![ATB's Heart background](www/img/preview/atb_bkg.jpg?raw=true "Title")
+
+So I just got this piece and tried to emulate it into an svg, of course it is not perfect, *but I am not a designer!*.
+![ATB's Heart](www/img/preview/atb_heart.png?raw=true "Title")
+
+
 ![Loading SVG Animation](www/img/preview/loading_svg_preview.png?raw=true "Title")
 
 *********************************************************************************  
