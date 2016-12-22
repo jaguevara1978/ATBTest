@@ -5,10 +5,12 @@ The UX is not the best as I was more concerned about meeting the Funcitonal requ
 Sorry about that, but maybe with a little bit more of time taht could be easily improved.
   
 ### SIGN IN
+It has the necessary validations to meet the requirements, and it will show any message as needed.  
 ![Sign In](www/img/preview/signin_preview.png?raw=true "Title")
   
   
 ### INFO PAGE  
+It uses Google Custom Search API. Which means that maybe in production mode the request might have some sort of problem doing the request, not so sure but as I read, Google kind of requires a different API key for every platform.  
 ![Sign In](www/img/preview/info_preview.png?raw=true "Title")
   
 ### SVG ANIMATION
