@@ -2,7 +2,7 @@
 
 ### Note: 
 The UX is not the best as I was more concerned about meeting the Funcitonal requirements.    
-Sorry about that, but maybe with a little bit more of time taht could be easily improved.
+Sorry about that, but maybe with a little bit more of time that could be easily improved.
   
 ### SIGN IN
 It has the necessary validations to meet the requirements, and it will show any message as needed.  
