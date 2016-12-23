@@ -66,12 +66,17 @@ angular.module('app').factory( 'ApiService', [ '$http', ApiService ] );
                 // (?=.*[a-z]): At least one lower case character
                 // (?=.*[A-Z]): At least one upper case character
                 // (?=.*[%#\*&!@]): At least one of the following: %#*&!@
-                var regexPwd = new RegExp( "^(?=.*[a-z])(?=.*[A-Z])(?=.*[%#\*&!@])(?=.{8,12})" );
+                // (?=.{8,12}) Between 8 and 12 letters
+                // ([A-Za-z]{0,3}[^A-Za-z]+)*[A-Za-z]{0,3}$ <<< Cannot have more than 3 letters together (i.e. "Abe4" is OK, but "Abig!" is not)
+                var regexPwd = new RegExp( "^(?=.*[A-Z])(?=.*[a-z])(?=.*[%#\*&!@])(?=.{8,12})([A-Za-z]{0,3}[^A-Za-z]+)*[A-Za-z]{0,3}$" );
                 if ( !regexPwd.test( data.pwd ) ) {
                     response.msg += '&#9679; The password is invalid<br>';
                     response.error = true;
                 } 
+
+                // This problem was solved using Regular expressions so no use to it. Code Commented successfully.
                 // Now Validate > Cannot have more than 3 letters together (i.e. "Abe4" is OK, but "Abig!" is not)
+/*
                 var regexAlpha = new RegExp( "^[A-Za-z]$" );
                 var alphaCounter = 0;
                 data.pwd.split( '' ).forEach( function( character ) {
@@ -93,6 +98,7 @@ angular.module('app').factory( 'ApiService', [ '$http', ApiService ] );
                     }
                     
                 });
+*/
 
                 // For Loop approach, decided to go for .filter to try ad improve 
                 //performance; though, now that is not too important.
